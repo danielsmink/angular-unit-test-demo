@@ -17,7 +17,9 @@ module.exports = function(config) {
     files: [
       './lib/angular.min.js',
       './lib/angular-mocks.js',
-      './app**/*Spec.js'
+      './app/components/helloService.js',
+      './app/components/usernameService.js',
+      './app/**/*Spec.js'
     ],
 
 
