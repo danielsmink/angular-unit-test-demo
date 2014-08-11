@@ -19,6 +19,8 @@ module.exports = function(config) {
       './lib/angular-mocks.js',
       './app/components/helloService.js',
       './app/components/usernameService.js',
+      './app/components/registerCtrl.js',
+      './app/components/numberFilter.js',
       './app/**/*Spec.js'
     ],
 
