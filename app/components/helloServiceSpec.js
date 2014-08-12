@@ -4,6 +4,7 @@
 
 describe("helloService", function() {
   beforeEach(module('HelloModule'));
+
   it('should return "hello" when called', function() {
     module(function($provide) {
       $provide.value('uppercaseService', function(value) {
@@ -14,4 +15,10 @@ describe("helloService", function() {
       expect(helloService()).toBe("hello");
     });
   });
+
+  it('should return "hello" when called', function() {
+    inject(function(uppercaseService) {
+      expect(uppercaseService()).toBe("hello");
+    })
+  })
 });
